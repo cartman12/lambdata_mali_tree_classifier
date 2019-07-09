@@ -40,4 +40,4 @@ def predict(X_test,y_test,majority_dict):
     
     row_prediction = data.iloc[ind].mode()[0]
     predictions.append(row_prediction)   
-  print(accuracy_score(y_test, predictions)) 
+  return accuracy_score(y_test, predictions)
